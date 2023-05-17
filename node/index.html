@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Matching Table</title>
+		<meta charSet="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="led.css">
+
+		<style media="only screen">
+            html, body {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                box-sizing: border-box;
+                -webkit-overflow-scrolling: touch;
+                background-color: hsla(31, 7%, 3%, 0.57);
+
+            }
+
+            html {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 0;
+                overflow: auto;
+            }
+
+            body {
+                padding: 1rem;
+                overflow: auto;
+            }
+
+            .row {
+              display: flex;
+            }
+
+            /* Create two equal columns that sits next to each other */
+            .column {
+              flex: 50%;
+              padding: 10px;
+              height: 300px; /* Should be removed. Only for demonstration */
+            }
+
+
+        </style>
+	</head>
+	<body>
+
+       
+		<div id="mylockgrid" style="height:100%" class="ag-theme-alpine-dark">
+		</div>
+       
+          
+        
+        
+       
+
+
+      
+
+  
+  	<button  onclick="onRemoveSelected()">
+        Remove Selected
+
+        </button>
+        <div>
+        <p style="color:white"><nobr>LOCK LOCATION:</nobr> <input type="text" id="mylocation" value="">
+            </p>
+  	    </div>
+
+		
+		<script src="aggrid.js">
+		</script>
+		<script src="table.js">
+		</script>
+        <script src="numericCellEditor.js">
+        </script>
+	</body>
+</html>
