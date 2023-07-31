@@ -67,7 +67,7 @@ router.route('/data')
 	 	
  let file_to_write	 = JSON.stringify(req.body['lock_data']);
 
- 	fs.writeFileSync('../data.json',file_to_write,err => {
+ 	fs.writeFile('../data.json',file_to_write,err => {
     if (err) throw err;
     
     res.sendStatus(200);
